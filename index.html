@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hazardhive</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      class="h-25"
+      href="/src/assets/images/Hazardhive  -fav.ico"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!-- font-awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 10px;
+        background: #fff;
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+        /* border-radius: 8px; */
+      }
+
+      .section-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px;
+        cursor: pointer;
+        background: white;
+        border-radius: 8px 8px 0 0;
+        margin-bottom: -1px;
+        transition: background 0.3s;
+      }
+
+      .section-header:hover {
+        background: #f5f5f5;
+      }
+
+      .section-header h3 {
+        margin: 0;
+        font-size: 18px;
+        color: #007ac3;
+        flex-grow: 1;
+        border-bottom: 1px solid #f5f5f5;
+      }
+
+      .section-header .toggle-icon {
+        width: 10px;
+        height: 10px;
+        border: solid #007ac3;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg); /* Default caret pointing down */
+        transition: transform 0.3s ease;
+      }
+
+      .section-header:hover .toggle-icon {
+        color: #005f9e;
+      }
+
+      .section.open .section-header .toggle-icon {
+        transform: rotate(-135deg);
+      }
+
+      .section-content {
+        display: none;
+        padding: 15px;
+        background: #fff;
+        border-radius: 0 0 8px 8px;
+      }
+
+      .section.open .section-content {
+        display: block;
+      }
+
+      .section-content img {
+        max-width: 100%;
+        margin-top: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="nav-placeholder"></div>
+
+    <section style="margin-top: 4rem">
+      <div class="header-section">
+        <div class="header-container">
+          <div class="header-text">
+            <h1 class="header-title">Barrier Based</h1>
+            <h1 class="header-title">Risk Assessment</h1>
+            <p class="header-description">
+              Hazardhive — Simplifying risk management with intuitive bowtie
+              visualization.
+            </p>
+            <div class="header-buttons">
+              <a href="/src/components/installation/installation.html" class="btn-primary">Get started now</a>
+              <a href="#" class="btn-secondary">Schedule a Demo ➡️</a>
+            </div>
+          </div>
+          <div class="header-image">
+            <img
+              src="/src/assets/images/hazard-h.png"
+              alt="Laptop with website preview"
+              class="header-laptop-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div style="text-align: center">
+      <h1 style="color: #007ac3">Hazardhive Feature Overview</h1>
+    </div>
+    <div class="container">
+      <div class="section">
+        <div class="section-header" onclick="toggleSection(this)">
+          <span class="toggle-icon"></span>
+          <h3>What is Hazardhive ?</h3>
+        </div>
+        <div class="section-content">
+          <p>
+            Hazardhive is the most used risk assessment software that is based
+            on the bowtie method. It enables you to easily create bowtie
+            diagrams to assess risk. Hazardhive is unique in its ability to
+            visualize complex risks in a way that is understandable, yet also
+            allows for detailed risk-based improvement plans.
+          </p>
+          <p>
+            A bowtie diagram presents the danger you face in a single,
+            understandable picture. It is simple to discern between the
+            proactive and reactive facets of risk management thanks to the
+            diagram's bowtie-like shape. HazardHive's bowtie diagram summarises
+            several possible event scenarios and shows the measures you have in
+            place to handle them. Designed with the end user in mind, Hazardhive
+            software is among the most user-friendly risk assessment tools.
+            Using HazardHive to create a diagram is easy, and the application
+            lets you update the diagram to reflect the current condition of your
+            safety barriers.
+          </p>
+          <img
+            src="/src/assets/images/image (15).png"
+            alt="Structure knowledge example"
+          />
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header" onclick="toggleSection(this)">
+          <span class="toggle-icon"></span>
+          <h3>Safety protocols visualization</h3>
+        </div>
+        <div class="section-content">
+          <p>
+            The bowtie technique clearly shows your risk management plan and
+            arranges the major hazards facing your organization. The barriers in
+            the bowtie diagram show the controls you have in place to prevent,
+            reduce, or eliminate serious outcomes. Holding barriers accountable
+            makes it obvious what everyone needs to do to operate safely. By
+            giving precise daily operating information, operational staff can
+            take ownership of the bowties when they are involved in their
+            construction.
+          </p>
+          <p>
+            You can use Hazardhive to see your safety protocols on the diagram.
+            Every action can be connected to the barrier it supports. Finding
+            safety-critical actions that are performed to guarantee the ongoing
+            integrity of risk barriers is the primary goal of the SMS. When all
+            the data is shown on the bowtie, everyone can see the full risk
+            context and the tasks they are responsible for.
+          </p>
+          <img
+            src="/src/assets/images/image (16).png"
+            alt="Structure knowledge example"
+          />
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header" onclick="toggleSection(this)">
+          <span class="toggle-icon"></span>
+          <h3>Safety protocols assessment & accountability</h3>
+        </div>
+        <div class="section-content">
+          <p>
+            Once a bowtie diagram has been created, you can assess and look over
+            the safety measures you've implemented. Among other things, these
+            barriers can be classified according to their type, effectiveness,
+            and accountability. Examine the efficacy of your barriers to obtain
+            instant visual insight into their strength. By examining the various
+            types of obstacles, you can increase the organization's resilience
+            and reduce the chance of common mode failure. Color coding is
+            commonly used to show how effective hazardhive barriers are, which
+            can be customized to your needs.
+          </p>
+          <p>
+            Customizable job titles can be used to connect accountability to
+            barriers. This makes it easier to understand who is in charge of
+            maintaining safety barriers. It increases ownership of barrier
+            performance and makes clear what everyone must do to operate safely.
+          </p>
+          <img
+            src="/src/assets/images/image (18).png"
+            alt="Structure knowledge example"
+          />
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header" onclick="toggleSection(this)">
+          <span class="toggle-icon"></span>
+          <h3>Communication at different levels of abstraction</h3>
+        </div>
+        <div class="section-content">
+          <p>
+            Bowtie diagrams allow easy risk communication by making the risk
+            visible and understandable at the right abstraction level.
+            Organizations are disseminating the bowtie diagrams by emphasizing
+            significant risk control issues, such as through brochures,
+            pocketbooks, and posters. Web-based bowtie diagrams are also
+            becoming more and more common in online training and information
+            systems. This ensures that risk communication is fully integrated
+            within the organization.
+          </p>
+          <img
+            src="/src/assets/images/image (19).png"
+            alt="Structure knowledge example"
+          />
+          <p>
+            In addition to being simple to comprehend, bowties offer a summary
+            and insight into risk assessment and analysis. This is because
+            bowtie diagrams focus on the important components and keep context
+            intact while reducing complexity to a reasonable size. Using the
+            software's various filter options, you may share the bowtie diagram
+            with every department in your company. Without removing any data,
+            filters enable you to select which information should be shown on
+            your diagram. To display the pertinent nodes for this specific
+            accountable person, for instance, you can filter the diagram based
+            on a node type.
+          </p>
+          <p>
+            Additionally, bowtie diagrams can be used to show that risks are
+            being managed. This gives management the confidence that risks are
+            being appropriately controlled. Many authorities across a range of
+            industries advise using bowtie diagrams in safety investigations or
+            safety cases due to their visual impact.
+          </p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header" onclick="toggleSection(this)">
+          <span class="toggle-icon"></span>
+          <h3>Web-based user-friendly interface</h3>
+        </div>
+        <div class="section-content">
+          <p>
+            Making a diagram in HazardHive is straightforward. By right-clicking
+            over elements (lines or nodes) and utilizing the window that
+            displays, you can add more bowtie elements. Additionally, Hazardhive
+            offers robust search filters for tasks like group operations. For
+            instance, you can select many elements and make group adjustments to
+            your diagrams using this functionality. – you can change the title
+            of a group of barriers at once or set the effectiveness of them.
+            Additionally, models can be imported and exported, and many models
+            can be combined to create a single model, enabling numerous
+            individuals to work on sub-models simultaneously before combining
+            them.
+          </p>
+          <img
+            src="/src/assets/images/image (20).png"
+            alt="Structure knowledge example"
+          />
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header" onclick="toggleSection(this)">
+          <span class="toggle-icon"></span>
+          <h3>Advance Filters</h3>
+        </div>
+        <div class="section-content">
+          <p>
+            ​​You can utilize Hazardhive's filters to let your staff or
+            management know specific information about the bowtie models. By
+            just picking the elements you don't want to display, you can use the
+            selective visibility filter to decide which information should be
+            hidden. You can filter on almost any element you added to the
+            diagram using the advanced filter.
+          </p>
+          <!-- <img
+            src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+            alt="Structure knowledge example"
+          /> -->
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header" onclick="toggleSection(this)">
+          <span class="toggle-icon"></span>
+          <h3>Metadata, custom terms & taxonomies</h3>
+        </div>
+        <div class="section-content">
+          <p>
+            Hazardhive allows you to generate additional information, as per the
+            organizational needs, as metadata that can be associated with nodes.
+          </p>
+          <img
+            src="/src/assets/images/image (21).png"
+            alt="Structure knowledge example"
+          />
+          <p>
+            Moreover, You can e.g. modify any label in the software to fit your
+            own terminology needs. For example, the term "barrier", which is
+            frequently used in certain industries, can be replaced with "safety
+            control" according to your organizational needs.
+          </p>
+          <p>
+            Although Hazardhive's software offers a standard taxonomy, some
+            organizations need taxonomies that are more industry-specific. You
+            may customize the barrier kinds, barrier effectiveness, and other
+            factors to meet the demands of your company.
+          </p>
+          <img
+            src="/src/assets/images/image (22).png"
+            alt="Structure knowledge example"
+          />
+
+        </div>
+      </div>
+    </div>
+    <!-- <div
+      style="
+        /* background-color: #333; */
+        color: #333;
+        text-align: center;
+        padding: 20px;
+      "
+      class="bg-light"
+    >
+      <h2>Learn how the software can work for you</h2>
+      <p>
+        Schedule a demo with us to give you a free online demonstration
+        of how the software fits your needs.
+      </p>
+      <button
+        style="
+          /* background-color: #4caf50; */
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        "
+        class="btn-secondary"
+      >
+        Request Demo ➡️
+      </button>
+    </div> -->
+
+    <!-- <div class="other-solution-container">
+      <div class="osc-row">
+        <div class="osc-col-md-4">
+          <img src="bowtiexp_enterprise.png" alt="BowTieXP Enterprise" />
+          <h2>SAFEST Enterprise</h2>
+          <p>Integrated risk management</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+        <div class="osc-col-md-4">
+          <img src="incidentxp.png" alt="IncidentXP" />
+          <h2>Markov Analysis</h2>
+          <p>One platform to analyze incidents</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+        <div class="0sc-col-md-4">
+          <img src="one_vision_platform.png" alt="One Vision Platform" />
+          <h2>Link Analysis Platform</h2>
+          <p>Seamlessly integrate with other software solutions</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div> -->
+
+    <script>
+      function toggleSection(header) {
+        const section = header.parentElement;
+        section.classList.toggle("open");
+      }
+    </script>
+
+    <div id="footerdgb"></div>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("/src/commonUI/navbar.html");
+      });
+      $(function () {
+        $("#footerdgb").load("/src/commonUI/footer.html");
+      });
+    </script>
+  </body>
+</html>
