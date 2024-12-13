@@ -49,75 +49,41 @@
   </head>
 
   <body>
-    <nav
-      id="navbar"
-      class="navbar navbar-light bg-light navbar-expand-sm fixed-top"
-      style="background-color: white; overflow: auto"
-    >
-      <a class="navbar-brand" href="/index.html"
-        ><img
-          src="/src/assets/images/logos/hazardhive.png"
-          style="width: auto; height: 60px"
-      /></a>
-
-      <button
-        type="button"
-        class="navbar-toggler"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapse"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="navbar-collapse collapse" id="collapse">
-        <ul class="navbar-nav ms-auto me-auto">
-          <li class="nav-item">
-            <a
-              href="/src/components/installation/installation.html"
-              class="nav-link"
-              >Installation</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              href="/src/components/licenses/dft-licenses.html"
-              class="nav-link"
-              >Licenses</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="/src/components/support/dft-support.html" class="nav-link"
-              >Support</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              href="/src/components/clients/clients.html"
-              class="nav-link"
-            >
-              Clients</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="/src/components/contact/contact.html" class="nav-link"
-              >Contact</a
-            >
-          </li>
-        </ul>
+    <nav id="navbar" class="navbar navbar-light bg-light navbar-expand-sm fixed-top" style="transition: none; margin: 0; padding: 0; height: 7vh;">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+          <!-- Left Logo -->
+          <a class="navbar-brand" href="/index.html">
+              <img src="/src/assets/images/logos/hazardhive.png" alt="HazardHive Logo" style="height: 100px;">
+          </a>
+  
+          <!-- Navbar Toggle Button for Mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Collapsible Menu -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto me-auto">
+                  <li class="nav-item"><a href="/src/components/installation/installation.html" class="nav-link">Installation</a></li>
+                  <li class="nav-item"><a href="/src/components/licenses/dft-licenses.html" class="nav-link">Licenses</a></li>
+                  <li class="nav-item"><a href="/src/components/support/dft-support.html" class="nav-link">Support</a></li>
+                  <li class="nav-item"><a href="/src/components/clients/clients.html" class="nav-link">Clients</a></li>
+                  <li class="nav-item"><a href="/src/components/contact/contact.html" class="nav-link">Contact</a></li>
+              </ul>
+          </div>
+  
+          <!-- Right Logo -->
+          <a class="navbar-brand" href="https://www.dgbtek.com" target="_blank">
+              <img src="/src/assets/images/dgb-logo.png" alt="DGB Logo" style="height: 60px;">
+          </a>
       </div>
-      <a class="navbar-brand" href="https://www.dgbtek.com"
-        ><img
-          src="/src/assets/images/dgb-logo.png"
-          style="width: auto; height: 40px"
-      /></a>
-    </nav>
+  </nav>
 
-    <div class=" container mt-5">
+    <div class="container mt-5">
       <div
         class="row"
-        style="margin-top: 40px; margin-left: auto; margin-right: auto"
+        style="margin-top: 70px; margin-left: auto; margin-right: auto"
       >
         <div class="csi-body">
           <h3 style="text-align: center">Contact Us</h3>
@@ -193,22 +159,15 @@
           <div class="divider-line-center"></div>
         </div>
 
-        <div class="row py-5" style="margin-top: 50px;">
-          <!-- <div class="col-sm-6">
-          <iframe class="responsive-iframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.0870363137647!2d74.43766051499593!3d31.521769381369104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190f7487092e83%3A0x975fe58fc007b549!2sDGB%20Technologies!5e0!3m2!1sen!2s!4v1595010355118!5m2!1sen!2s"
-            frameborder="0" allowfullscreen></iframe>
-          <h3> Pakistan Office </h3>
-          DGB Technologies<br>1st Floor, 21 CC DHA, Phase 8, Ex-Parkview,
-          Lahore, PK<br>
-          T: +92 333 474 4438<br>
-          T: +92 423 717 5844
+        <div class="row py-5" style="margin-top: 50px">
 
-        </div> -->
           <div class="col-sm-6">
             <iframe
               class="responsive-iframe"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.378932977419!2d6.783421115767238!3d51.432834479622926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8bf6fbc41770b%3A0x6f3f3a3c643b03e1!2sKeetmanstra%C3%9Fe%201%2C%2047058%20Duisburg%2C%20Germany!5e0!3m2!1sen!2s!4v1598864989249!5m2!1sen!2s"
+              width="600"
+              height="300"
+              style="border: 0"
               frameborder="0"
               allowfullscreen
             ></iframe>
@@ -218,15 +177,16 @@
           </div>
           <div class="col-sm-6">
             <iframe
-              class="responsive-iframe"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.228504767186!2d-74.16873268472253!3d41.02025647929954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2e3abca645eb5%3A0x7d055cb013e9dae5!2s393%20Crescent%20Ave%2C%20Wyckoff%2C%20NJ%2007481%2C%20USA!5e0!3m2!1sen!2s!4v1595010211253!5m2!1sen!2s"
-              frameborder="0"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3011.3234621843867!2d-74.179771!3d40.9962929!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2e2dc2670e8ef%3A0x483f2eeb7535b463!2s476%20James%20Way%2C%20Wyckoff%2C%20NJ%2007481%2C%20USA!5e0!3m2!1sen!2s!4v1734023677110!5m2!1sen!2s"
+              width="600"
+              height="450"
+              style="border: 0"
               allowfullscreen
             ></iframe>
             <h3>USA Office</h3>
-            DGB Technologies <br />393 Crescent Ave Wyckoff, New Jersey 07481,
+            DGB Technologies <br />476 James Way, Wyckoff, New Jersey 07481,
             US<br />
-            T: +1 551 284 9981<br /><br /><br />
+            T: +1 (201) 783-7855<br /><br /><br />
           </div>
         </div>
         <div class="row" style="margin-top: 15px; margin-bottom: 250px"></div>
@@ -411,7 +371,7 @@
         class="text-center p-4"
         style="background-color: rgba(0, 0, 0, 0.025)"
       >
-        © 2023 Copyright:
+        © 2025 Copyright:
         <a class="text-reset fw-bold social" href="https://www.dgbtek.com/"
           >DGB Technologies</a
         >

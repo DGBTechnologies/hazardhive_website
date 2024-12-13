@@ -25,8 +25,36 @@
   </head>
 
   <body>
-    <div id="nav-placeholder"></div>
-
+    <nav id="navbar" class="navbar navbar-light bg-light navbar-expand-sm fixed-top" style="transition: none; margin: 0; padding: 0; height: 7vh;">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+          <!-- Left Logo -->
+          <a class="navbar-brand" href="/index.html">
+              <img src="/src/assets/images/logos/hazardhive.png" alt="HazardHive Logo" style="height: 100px;">
+          </a>
+  
+          <!-- Navbar Toggle Button for Mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Collapsible Menu -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto me-auto">
+                  <li class="nav-item"><a href="/src/components/installation/installation.html" class="nav-link">Installation</a></li>
+                  <li class="nav-item"><a href="/src/components/licenses/dft-licenses.html" class="nav-link">Licenses</a></li>
+                  <li class="nav-item"><a href="/src/components/support/dft-support.html" class="nav-link">Support</a></li>
+                  <li class="nav-item"><a href="/src/components/clients/clients.html" class="nav-link">Clients</a></li>
+                  <li class="nav-item"><a href="/src/components/contact/contact.html" class="nav-link">Contact</a></li>
+              </ul>
+          </div>
+  
+          <!-- Right Logo -->
+          <a class="navbar-brand" href="https://www.dgbtek.com" target="_blank">
+              <img src="/src/assets/images/dgb-logo.png" alt="DGB Logo" style="height: 60px;">
+          </a>
+      </div>
+  </nav>
     <div class="content">
       <nav class="navbar navbar-light bg-light navbar-expand-sm d-flex"
         id="local-nav">
@@ -120,7 +148,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header" id="allProducts">
                   <button type="button" class="accordion-button collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#collapseOne">GUI</button>
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne">Bowtie Model</button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse"
                   data-bs-parent="#productsAccordion">
@@ -131,8 +159,8 @@
               <div class="accordion-item">
                 <h2 class="accordion-header" id="businessProducts">
                   <button type="button" class="accordion-button collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#collapseTwo">Custom
-                    Metrices</button>
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwo">Configurations
+                    </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse"
                   data-bs-parent="#productsAccordion">
@@ -141,7 +169,7 @@
                   </div>
                 </div>
               </div>
-
+<!-- 
               <div class="accordion-item">
                 <h2 class="accordion-header" id="developerProducts">
                   <button type="button" class="accordion-button collapsed"
@@ -239,22 +267,176 @@
                     
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
       </div>
 
     </div>
-    <div id="footerdgb"></div>
-    <script>
-        $(function () {
-          $("#nav-placeholder").load("/src/commonUI/navbar.html");
-        });
-        $(function(){
-          $("#footerdgb").load("/src/commonUI/footer.html");
-        });
-        </script>
+    <footer class="mt-5 text-center text-lg-start bg-white text-muted">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <!-- <span>Get connected with us on social networks</span> -->
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a
+            href="https://github.com/DGBTechnologies/SAFEST/discussions"
+            class="social text-decoration-none me-4 link-secondary"
+          >
+            <i class="fa fa-google"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/dgbtechnologies/"
+            class="social text-decoration-none me-4 link-secondary"
+          >
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/DGBTechnologies/SAFEST/discussions"
+            class="social text-decoration-none me-4 link-secondary"
+          >
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <img
+                src="/src/assets/images/dgb-logo.png"
+                width="150px"
+                alt="Dgb-logo"
+              />
+
+              <p class="text-justify">
+                An independent technology research company dedicated to
+                implementing next-generation ideas and inventing solutions in
+                niche technology areas.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Projects</h6>
+              <p>
+                <a
+                  href="https://www.dgbtek.com/Projects.html"
+                  class="text-reset"
+                  >Formal Verification</a
+                >
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 px-0 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a
+                  href="/src/components/tool_features/dft-tool-features.html"
+                  class="text-reset"
+                  >Tool Features</a
+                >
+              </p>
+              <p>
+                <a
+                  href="/src/components/installation/installation.html"
+                  class="text-reset"
+                  >Installation</a
+                >
+              </p>
+              <p>
+                <a
+                  href="/src/components/documentations/dft-documentations.html"
+                  class="text-reset"
+                  >Documentations</a
+                >
+              </p>
+              <p>
+                <a
+                  href="/src/components/support/dft-support.html"
+                  class="text-reset"
+                  >Support</a
+                >
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div
+              class="col-md-5 col-lg-3 col-xl-3 mx-auto px-0 mb-md-0 mb-4"
+              style="width: 550px !important"
+            >
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p>
+                <img
+                  src="/src/assets/images/location.png"
+                  alt=""
+                  height="25px"
+                />
+                476 James Way, Wyckoff, New Jersey 07481, US <br />
+                <img
+                  src="/src/assets/images/location.png"
+                  alt=""
+                  height="25px"
+                />
+                Keetman Str. 01, 47058 Duisburg, Germany <br />
+                <!-- <img src="/src/assets/images/location.png" alt="" height="25px" />
+            21 CC-1st Floor, Commercial Area, DHA Phase-8 Ex-Parkview,Lahore PK -->
+              </p>
+              <p>
+                <a
+                  href="mailto:contact@dgbtek.com"
+                  style="text-decoration: none"
+                  class="text-reset"
+                  ><img
+                    src="/src/assets/images/mail-24.png"
+                    alt=""
+                    height="25px"
+                  />
+                  contact@dgbtek.com</a
+                >
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.025)"
+      >
+        © 2025 Copyright:
+        <a class="text-reset fw-bold social" href="https://www.dgbtek.com/"
+          >DGB Technologies</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
   </body>
 
 </html>
