@@ -9,6 +9,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet"
       href="/src/components/support/dft-support.css" />
+      <link rel="stylesheet" href="/index.css" />
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
@@ -29,7 +30,7 @@
       <div class="container-fluid d-flex align-items-center justify-content-between">
           <!-- Left Logo -->
           <a class="navbar-brand" href="/index.html">
-              <img src="/src/assets/images/logos/hazardhive.png" alt="HazardHive Logo" style="height: 100px;">
+              <img src="/src/assets/images/logos/hazardhive.png" alt="HazardHive Logo" style="height: 60px;">
           </a>
   
           <!-- Navbar Toggle Button for Mobile -->
@@ -41,9 +42,11 @@
           <!-- Collapsible Menu -->
           <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto me-auto">
+  
+                  <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
                   <li class="nav-item"><a href="/src/components/installation/installation.html" class="nav-link">Installation</a></li>
                   <li class="nav-item"><a href="/src/components/licenses/dft-licenses.html" class="nav-link">Licenses</a></li>
-                  <li class="nav-item"><a href="/src/components/support/dft-support.html" class="nav-link">Support</a></li>
+                  <li class="nav-item active"><a href="/src/components/support/dft-support.html" class="nav-link">Support</a></li>
                   <li class="nav-item"><a href="/src/components/clients/clients.html" class="nav-link">Clients</a></li>
                   <li class="nav-item"><a href="/src/components/contact/contact.html" class="nav-link">Contact</a></li>
               </ul>
@@ -51,392 +54,125 @@
   
           <!-- Right Logo -->
           <a class="navbar-brand" href="https://www.dgbtek.com" target="_blank">
-              <img src="/src/assets/images/dgb-logo.png" alt="DGB Logo" style="height: 60px;">
+              <img src="/src/assets/images/dgb-logo.png" alt="DGB Logo" style="height: 40px;">
           </a>
       </div>
   </nav>
-    <div class="content">
-      <nav class="navbar navbar-light bg-light navbar-expand-sm d-flex"
-        id="local-nav">
-        <div class="container mt-3">
-          <ul class="navbar-nav px-5 ms-auto me-auto">
-            <li class="nav-item justify-content-center">
-              <a
-                href="#"
-                class="nav-link">Issues & Suggestions</a>
-            </li>
-            <li class="nav-item justify-content-center"><a
-                href="#faq"
-                class="nav-link">FAQ </a></li>
-          </ul>
-        </div>
-      </nav>
-      <!-- <div class="bg-image p-5 bg-secondary text-center shadow-1-strong mb-5 rounded text-white">
-      <h1 class="mb-3 h">Support you can count on</h1>
-    </div> -->
+        
 
-    
-      <div class="py-5 container-fluid col-sm-10 py-3 my-4">
-        <div class="row">
-          <div class="col-sm-12">
-            <p class="text-center mb-5">Please use the following links to report
-              issues & suggestions, discuss ideas and watch video demos</p>
-          </div>
-        </div>
-        <div class="row justify-content-center mb-5 ">
-          <div class="col-sm-3">
-            <a href="https://github.com/DGBTechnologies/hazardhive/discussions" target="_blank" rel="noreferrer noopener" >
-              <div class="card">
-                <div class="m-auto py-3">
-                  <img src="/src/assets/images/dicussion.png"
-                    alt="research-student" width="100%">
-                </div>
-                <div class="card-body">
-                  <h6 class="card-title text-center " style="color: #000 ;">Discussions</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-3">
-            <a href="https://github.com/DGBTechnologies/hazardhive/issues" target="_blank" rel="noreferrer noopener" >
-              <div class="card">
-                <div class="m-auto py-3">
-                  <img src="/src/assets/images/issues.jpg"
-                    alt="research-student" width="100%">
-                </div>
-                <div class="card-body">
-                  <h6 class="card-title text-center" style="color: #000 ;">Issues
-                    & Suggestions</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-3">
-            <a href="https://www.youtube.com/@hazardhive" target="_blank" rel="noreferrer noopener" >
-              <div class="card">
-                <div class="m-auto py-3">
-                  <img src="/src/assets/images/youtube.png"
-                    alt="research-student" width="100%">
-                </div>
-                <div class="card-body">
-                  <h6 class="card-title text-center">Youtube</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="container-fluid">
-          <hr>
-          <p class="p-5 text-center"> For any queries, please feel free to
-            reach us at
-            <a href="mailto:hazardhive@dgbtek.com">hazardhive@dgbtek.com</a></p>
-          <hr>
-        </div>
-        <div class="row mt-5 pt-5">
-          <div class="col-sm-12">
-            <h1 id="faq" class="text-center">Frequently Asked Questions</h1><br>
-          </div>
-        </div>
-      </div>
+      <section style="margin-top: 4rem">
+        <div class="content py-5">
 
-
-      <div class="container-fluid col-sm-10">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="accordion" id="productsAccordion">
-
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="allProducts">
-                  <button type="button" class="accordion-button collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#collapseOne">Bowtie Model</button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse"
-                  data-bs-parent="#productsAccordion">
+      
+        <div class="container-fluid col-sm-8 py-5">
+          <div class="row">
+            <div class="col-sm-12">
+              <p class="text-center mb-5">Please use the following links to report
+                issues & suggestions, discuss ideas and watch video demos</p>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-5 ">
+            <div class="col-sm-3">
+              <a href="https://github.com/DGBTechnologies/hazardhive/discussions" target="_blank" rel="noreferrer noopener" >
+                <div class="card">
+                  <div class="m-auto py-3">
+                    <img src="/src/assets/images/dicussion.png"
+                      alt="research-student" width="100%">
+                  </div>
                   <div class="card-body">
+                    <h6 class="card-title text-center " style="color: #000 ;">Discussions</h5>
                   </div>
                 </div>
+              </a>
+            </div>
+            <div class="col-sm-3">
+              <a href="https://github.com/DGBTechnologies/hazardhive/issues" target="_blank" rel="noreferrer noopener" >
+                <div class="card">
+                  <div class="m-auto py-3">
+                    <img src="/src/assets/images/issues.jpg"
+                      alt="research-student" width="100%">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title text-center" style="color: #000 ;">Issues
+                      & Suggestions</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-3">
+              <a href="https://www.youtube.com/@SAFESTPRA" target="_blank" rel="noreferrer noopener" >
+                <div class="card">
+                  <div class="m-auto py-3">
+                    <img src="/src/assets/images/youtube.png"
+                      alt="research-student" width="100%">
+                  </div>
+                  <div class="card-body">
+                    <h6 class="card-title text-center">Youtube</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <hr>
+            <p class="p-5 text-center"> For any queries, please feel free to
+              reach us at
+              <a href="mailto:hazardhive@dgbtek.com">hazardhive@dgbtek.com</a></p>
+            <hr>
+          </div>
+          <div class="container-fluid col-sm-8 my-5 ">
+            <div class="row" style="margin-top: 40px; margin-left: auto; margin-right: auto">
+              <div class="csi-body">
+                <h3 style="text-align: center">Frequently Asked Questions</h3>
+                <div class="divider-line-center"></div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="businessProducts">
-                  <button type="button" class="accordion-button collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#collapseTwo">Configurations
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse"
-                  data-bs-parent="#productsAccordion">
-                  <div class="card-body">
-                  
-                  </div>
-                </div>
-              </div>
-<!-- 
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="developerProducts">
-                  <button type="button" class="accordion-button collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#collapseThree">Analysis
-                    Types</button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse"
-                  data-bs-parent="#productsAccordion">
-                  <div class="card-body">
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="allProducts">
-                  <button type="button" class="accordion-button collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#collapsefour">Exact
-                    Verification</button>
-                </h2>
-                <div id="collapsefour" class="accordion-collapse collapse"
-                  data-bs-parent="#productsAccordion">
-                  <div class="card-body">
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="allProducts">
-                  <button type="button" class="accordion-button collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#collapsefive">Approximate Verification</button>
-                </h2>
-                <div id="collapsefive" class="accordion-collapse collapse"
-                  data-bs-parent="#productsAccordion">
-                  <div class="card-body">
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="allProducts">
-                  <button type="button" class="accordion-button collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#collapsesix">Graphs</button>
-                </h2>
-                <div id="collapsesix" class="accordion-collapse collapse"
-                  data-bs-parent="#productsAccordion">
-                  <div class="card-body">
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="allProducts">
-                  <button type="button" class="accordion-button collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#collapseseven">Simulation</button>
-                </h2>
-                <div id="collapseseven" class="accordion-collapse collapse"
-                  data-bs-parent="#productsAccordion">
-                  <div class="card-body">
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="allProducts">
-                  <button type="button" class="accordion-button collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#collapseeight">Simplification</button>
-                </h2>
-                <div id="collapseeight" class="accordion-collapse collapse"
-                  data-bs-parent="#productsAccordion">
-                  <div class="card-body">
-                   
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="allProducts">
-                  <button type="button" class="accordion-button collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#collapsenine">Modularization</button>
-                </h2>
-                <div id="collapsenine" class="accordion-collapse collapse"
-                  data-bs-parent="#productsAccordion">
-                  <div class="card-body">
-                   
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="allProducts">
-                  <button type="button" class="accordion-button collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#collapseten">SYSML-DFT</button>
-                </h2>
-                <div id="collapseten" class="accordion-collapse collapse"
-                  data-bs-parent="#productsAccordion">
-                  <div class="card-body">
-                    
-                  </div>
-                </div>
-              </div> -->
             </div>
           </div>
         </div>
-      </div>
-
-    </div>
-    <footer class="mt-5 text-center text-lg-start bg-white text-muted">
-      <!-- Section: Social media -->
-      <section
-        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-      >
-        <!-- Left -->
-        <div class="me-5 d-none d-lg-block">
-          <!-- <span>Get connected with us on social networks</span> -->
-        </div>
-        <!-- Left -->
-
-        <!-- Right -->
-        <div>
-          <a
-            href="https://github.com/DGBTechnologies/SAFEST/discussions"
-            class="social text-decoration-none me-4 link-secondary"
-          >
-            <i class="fa fa-google"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/company/dgbtechnologies/"
-            class="social text-decoration-none me-4 link-secondary"
-          >
-            <i class="fa fa-linkedin"></i>
-          </a>
-          <a
-            href="https://github.com/DGBTechnologies/SAFEST/discussions"
-            class="social text-decoration-none me-4 link-secondary"
-          >
-            <i class="fa fa-github"></i>
-          </a>
-        </div>
-        <!-- Right -->
-      </section>
-      <!-- Section: Social media -->
-
-      <!-- Section: Links  -->
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
-          <div class="row mt-3">
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <!-- Content -->
-              <img
-                src="/src/assets/images/dgb-logo.png"
-                width="150px"
-                alt="Dgb-logo"
-              />
-
-              <p class="text-justify">
-                An independent technology research company dedicated to
-                implementing next-generation ideas and inventing solutions in
-                niche technology areas.
-              </p>
+  
+  
+        <div class="container-fluid col-sm-8">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="accordion" id="productsAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="allProducts">
+                    <button type="button" class="accordion-button collapsed"
+                      data-bs-toggle="collapse" data-bs-target="#collapsenine">Bowtie Model</button>
+                  </h2>
+                  <div id="collapsenine" class="accordion-collapse collapse"
+                    data-bs-parent="#productsAccordion">
+                    <div class="card-body">
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="allProducts">
+                    <button type="button" class="accordion-button collapsed"
+                      data-bs-toggle="collapse" data-bs-target="#collapseten">Configurations</button>
+                  </h2>
+                  <div id="collapseten" class="accordion-collapse collapse"
+                    data-bs-parent="#productsAccordion">
+                    <div class="card-body">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Projects</h6>
-              <p>
-                <a
-                  href="https://www.dgbtek.com/Projects.html"
-                  class="text-reset"
-                  >Formal Verification</a
-                >
-              </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 px-0 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-              <p>
-                <a
-                  href="/src/components/tool_features/dft-tool-features.html"
-                  class="text-reset"
-                  >Tool Features</a
-                >
-              </p>
-              <p>
-                <a
-                  href="/src/components/installation/installation.html"
-                  class="text-reset"
-                  >Installation</a
-                >
-              </p>
-              <p>
-                <a
-                  href="/src/components/documentations/dft-documentations.html"
-                  class="text-reset"
-                  >Documentations</a
-                >
-              </p>
-              <p>
-                <a
-                  href="/src/components/support/dft-support.html"
-                  class="text-reset"
-                  >Support</a
-                >
-              </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div
-              class="col-md-5 col-lg-3 col-xl-3 mx-auto px-0 mb-md-0 mb-4"
-              style="width: 550px !important"
-            >
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              <p>
-                <img
-                  src="/src/assets/images/location.png"
-                  alt=""
-                  height="25px"
-                />
-                476 James Way, Wyckoff, New Jersey 07481, US <br />
-                <img
-                  src="/src/assets/images/location.png"
-                  alt=""
-                  height="25px"
-                />
-                Keetman Str. 01, 47058 Duisburg, Germany <br />
-                <!-- <img src="/src/assets/images/location.png" alt="" height="25px" />
-            21 CC-1st Floor, Commercial Area, DHA Phase-8 Ex-Parkview,Lahore PK -->
-              </p>
-              <p>
-                <a
-                  href="mailto:contact@dgbtek.com"
-                  style="text-decoration: none"
-                  class="text-reset"
-                  ><img
-                    src="/src/assets/images/mail-24.png"
-                    alt=""
-                    height="25px"
-                  />
-                  contact@dgbtek.com</a
-                >
-              </p>
-            </div>
-            <!-- Grid column -->
           </div>
-          <!-- Grid row -->
         </div>
-      </section>
-      <!-- Section: Links  -->
+  
+      </div>  
+    </section>
 
-      <!-- Copyright -->
-      <div
-        class="text-center p-4"
-        style="background-color: rgba(0, 0, 0, 0.025)"
-      >
-        © 2025 Copyright:
-        <a class="text-reset fw-bold social" href="https://www.dgbtek.com/"
-          >DGB Technologies</a
-        >
-      </div>
-      <!-- Copyright -->
-    </footer>
+    <div id="footerdgb"></div>
+    <script>
+        $(function(){
+          $("#footerdgb").load("/src/commonUI/footer.html");
+        });
+        </script>
   </body>
 
 </html>

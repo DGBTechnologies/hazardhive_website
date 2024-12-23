@@ -1,9 +1,4 @@
 
-.active{
-  border-bottom: 2px solid blue;
-}
-
-
 #alert-box {
   position: fixed;
   top: 0;
